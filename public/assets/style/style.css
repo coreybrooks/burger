@@ -15,8 +15,12 @@
    width: 100%;
    max-width: 800px;
    padding: 20px;
+   outline: 1px groove #2B2B2B;
 }
 .bottom {
     width: 100%;
     margin: auto;
+}
+.section {
+    outline: 1px groove #2B2B2B;
 }

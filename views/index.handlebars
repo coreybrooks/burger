@@ -5,13 +5,10 @@
 </div>
 
 
-<h1 class="text-center">Burger Time!!</h1>
-<br><br><br>
+<h1 class="text-center">Burger Time!!</h1><hr><br>  
 
 <div class="row">
-  <div class="col-lg-1">
-  </div>      
-  <div class="col-lg-3">  
+  <div class="col-lg-4 text-center">  
     <h4><u>Burgers to eat</u></h4>
     <ul> 
         {{#each burger}}
@@ -21,7 +18,7 @@
 
             <form action="/{{this.id}}?_method=PUT" method="POST">
                 <input type="hidden" name="devoured" value="true">
-                <button type="submit">EAT BURGER!</button>
+                <button type="submit">DEVOUR IT!</button>
             </form>
 
          </li> 
@@ -29,12 +26,8 @@
         {{/each}}
     </ul>        
   </div>
-
-  <div class="col-lg-1">
-  </div>
-
-  <div class="col-lg-3">
-    <h4><u>Burgers I Ate</u></h4>
+  <div class="col-lg-4 text-center">
+    <h4><u>Devoured Burgers</u></h4>
     <ul>
         {{#each burger}}
           {{#if this.devoured}}
@@ -52,10 +45,7 @@
     </ul>    
   </div>
 
-  <div class="col-lg-1">
-  </div>
-
-  <div class="col-lg-2">  
+  <div class="col-lg-4 text-center">  
     <h4><u>Add Burger</u></h4>
     <form class="create-update-form" action="/" method="POST">
         <div class="form-group">
@@ -65,14 +55,11 @@
         <div class="form-group">
             <label for="dv">Devoured?</label><br>
             <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-            <input type="radio" name="devoured" value="0">Not Eaten
+            <input type="radio" name="devoured" value="0">Not Eaten Yet<Yet></Yet>
         </div>
 
         <button type="submit">Add Burger</button>
     </form> 
-  </div>
-
-  <div class="col-lg-1">
   </div>
 </div>    
 
