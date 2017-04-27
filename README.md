@@ -14,7 +14,10 @@ The methods used to execute the MySQL commands in the controllers are stored in 
 
 
 #### Controller setup
-The controller routes are saved in burger_controller.js and exported as router.
+The controller routes are saved in burger_controller.js and exported as router. The burger_controller links to the burger model which links to orm.js to function.
+* The get ("/") route grabs all the burgers from the database.  
+* The post ("/") route creates a new burger in the database with the name and devoured value of the added burger.  The page is then redirected to the get route to display all burgers including the new addition.
+* The put ("/:id") route updates the devoured value of the burger in the database when the button next to it is pushed.  The page is then redirected to the get route to display all burgers including the changed position of the updated burger.
 
 #### View setup
-The views folder contains the handlebar files.  The information is rendered to index.handlebars which is then sent to main.handlebars via Handlebars.  Buttons are rendered by index.handlebars which relay information to the database.
+The views folder contains the handlebar files.  The information is rendered to index.handlebars which is then sent to main.handlebars via Handlebars.  Buttons are rendered by index.handlebars which relays information to the database through the controller and model files.
