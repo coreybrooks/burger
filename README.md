@@ -14,7 +14,7 @@ The methods used to execute the MySQL commands in the controllers are stored in 
 
 
 #### Controller setup
-The controller routes are save in burger_controller.js and exported as router.
+The controller routes are saved in burger_controller.js and exported as router.
 
 #### View setup
 The views folder contains the handlebar files.  The information is rendered to index.handlebars which is then sent to main.handlebars via Handlebars.  Buttons are rendered by index.handlebars which relay information to the database.
