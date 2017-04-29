@@ -10,7 +10,7 @@ Each burger in the "Burgers to Eat" section has a "DEVOUR IT!" button next to it
 
 
 #### Model setup
-The methods used to execute the MySQL commands in the controllers are stored in the orm.js file. The code that will call the ORM functions with specific input is stored in the burger.js file in the models folder.
+The methods used to execute the MySQL commands in the controller files are stored in the orm.js file. The code that l calls the ORM functions with specific input is stored in the burger.js file in the models folder.
 
 
 #### Controller setup
